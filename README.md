@@ -9,7 +9,6 @@ src/
 │   ├── ItemBiblioteca.java      ← Classe ABSTRATA (base)
 │   ├── Livro.java               ← Herda de ItemBiblioteca
 │   ├── Revista.java             ← Herda de ItemBiblioteca
-│   ├── LivroDigital.java        ← Herda de ItemBiblioteca
 │   └── Usuario.java             ← Classe normal com Array de empréstimos
 └── service/
     └── Biblioteca.java          ← Gerencia acervo, usuários e empréstimos
@@ -23,7 +22,7 @@ src/
 |--------------------|---------------------------------------------------------------|
 | Classe Abstrata    | `ItemBiblioteca.java` — não pode ser instanciada diretamente  |
 | Método Abstrato    | `exibirDetalhes()` em `ItemBiblioteca`                        |
-| Herança            | `Livro`, `Revista`, `DVD` herdam de `ItemBiblioteca`          |
+| Herança            | `Livro`, `Revista`, herdam de `ItemBiblioteca`          |
 | Construtores       | Todas as classes possuem construtores com parâmetros          |
 | `super()`          | Subclasses chamam o construtor da classe pai                  |
 | Classes e Objetos  | `new Livro(...)`, `new Usuario(...)`, `new Biblioteca()`      |
@@ -42,7 +41,7 @@ src/
 
 ### Compilar (execute dentro da pasta `src/`)
 ```bash
-javac model/ItemBiblioteca.java model/Livro.java model/Revista.java model/LivroDigital.java model/Usuario.java service/Biblioteca.java Main.java
+javac model/ItemBiblioteca.java model/Livro.java model/Revista.java model/Usuario.java service/Biblioteca.java Main.java
 ```
 
 ### Executar (ainda dentro de `src/`)
@@ -75,8 +74,7 @@ java Main
 | L003   | Livro   | Clean Code              |
 | R001   | Revista | National Geographic     |
 | R002   | Revista | Scientific American     |
-| D001   | Digital | O Sobrinho do Mago epub |
-| D002   | Digital | A Última Batalha epub   |
+
 
 **Usuários pré-cadastrados:**
 - Ana Silva — CPF: `111.111.111-11`
