@@ -42,7 +42,7 @@ src/
 
 ### Compilar (execute dentro da pasta `src/`)
 ```bash
-javac model/ItemBiblioteca.java model/Livro.java model/Revista.java model/DVD.java model/Usuario.java service/Biblioteca.java Main.java
+javac model/ItemBiblioteca.java model/Livro.java model/Revista.java model/LivroDigital.java model/Usuario.java service/Biblioteca.java Main.java
 ```
 
 ### Executar (ainda dentro de `src/`)
@@ -75,8 +75,8 @@ java Main
 | L003   | Livro   | Clean Code              |
 | R001   | Revista | National Geographic     |
 | R002   | Revista | Scientific American     |
-| D001   | DVD     | Cidadão Kane            |
-| D002   | DVD     | Matrix                  |
+| D001   | Digital | O Sobrinho do Mago epub |
+| D002   | Digital | A Última Batalha epub   |
 
 **Usuários pré-cadastrados:**
 - Ana Silva — CPF: `111.111.111-11`
